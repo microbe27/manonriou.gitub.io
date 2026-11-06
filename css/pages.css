@@ -1,0 +1,24 @@
+/* Pages Galerie et À propos (en complément de project.css) */
+.page-title.big { font-family: 'LoveYa', cursive; font-weight: 400; font-size: 3.1rem; }
+
+/* Galerie : collage positionné comme dans la maquette (1920px de large) */
+.collage { position: relative; width: 100%; aspect-ratio: 1920 / 1300; margin: 30px 0 80px; }
+.collage img { position: absolute; object-fit: cover; display: block; transition: transform .3s ease; }
+.collage img:hover { z-index: 1; transform: scale(1.03); }
+
+/* À propos */
+.about { max-width: 860px; margin: 0 auto; padding: 50px 24px 100px; text-align: center; }
+.about h1 { margin: 0 0 70px; font-family: 'LoveYa', cursive; font-weight: 400; font-size: 3.1rem; }
+.about p { font-weight: 400; font-size: 1.55rem; line-height: 1.2; margin: 0 0 1.2em; }
+.about b { font-weight: 900; }
+.about .cv { margin-top: 2.2em; }
+.about .cv a { text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 700px) {
+  .collage { aspect-ratio: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; padding: 0 16px; }
+  .collage img { position: static; width: 100% !important; height: auto !important; }
+  .page-title.big { font-size: 2.2rem; }
+  .about { padding: 20px 16px 60px; }
+  .about h1 { font-size: 2.4rem; margin-bottom: 40px; }
+  .about p { font-size: 1.1rem; }
+}

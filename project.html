@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects – Manon Riou</title>
+<link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="top-left">
+    <a id="back" href="index.html"></a>
+    <div class="lang"><button data-lang="fr">FR</button><button data-lang="en">EN</button></div>
+  </div>
+  <h1 class="page-title" data-i18n="projects"></h1>
+  <button id="theme" aria-label="Mode nuit"><img src="PICTOGRAM/SUN_Pictogram.png" alt=""></button>
+</header>
+
+<main id="grid" class="grid"></main>
+
+<section id="project" hidden>
+  <div class="banner">
+    <a id="prev" href="#" aria-label="Previous">&lt;</a>
+    <h2 id="bannerTitle"></h2>
+    <a id="next" href="#" aria-label="Next">&gt;</a>
+  </div>
+  <div class="layout">
+    <aside class="info">
+      <h3 id="title"></h3>
+      <p class="meta" id="meta"></p>
+      <p class="desc" id="desc"></p>
+      <div class="credit"><span data-i18n="credit"></span><br>@Manon Riou</div>
+    </aside>
+    <div class="media" id="media"></div>
+    <nav class="index" id="index"></nav>
+  </div>
+</section>
+
+<script src="js/project.js"></script>
+</body>
+</html>
